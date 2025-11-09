@@ -11,6 +11,8 @@ $:
         - vscode
         - docker
       stages:
+        - name: 插件
+          script: code-server --install-extension unifiedjs.vscode-mdx
         - name: install
           script: pnpm i
 
